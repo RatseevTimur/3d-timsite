@@ -1,5 +1,5 @@
 {
-  "name": "3D-scene-timsite",
+  "name": "3d-timsite",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-spring/web": "^9.7.4",
     "@react-three/drei": "^9.56.24",
     "@react-three/fiber": "^8.11.0",
     "@types/three": "^0.149.0",
