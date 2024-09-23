@@ -35,7 +35,9 @@ function Shadows(props) {
 function Model({ open, hinge, ...props }) {
   const group = useRef()
   // Load model
-  const { nodes, materials } = useGLTF('src/models/mac-draco.glb')
+  const url = new URL('./assets/mac-draco.glb', import.meta.url);
+
+  const { nodes, materials } = useGLTF(url.href)
   // Take care of cursor state on hover
   const [hovered, setHovered] = useState(false)
   useEffect(() => void (document.body.style.cursor = hovered ? 'pointer' : 'auto'), [hovered])
